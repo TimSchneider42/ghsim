@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 # MIT License
 #
 # Copyright (c) 2020 Tim Schneider
@@ -188,7 +190,7 @@ if __name__ == "__main__":
         s.listen(5)
         s.settimeout(0)
 
-        print("Listening to port {}...".format(args.port))
+        print("Listening on port {}...".format(args.port))
 
         with TemporaryDirectory() as tmpdir:
             while True:
