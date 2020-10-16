@@ -29,12 +29,11 @@
                             unstable stable simulation. Instead, decompose any
                             geometric shapeinto multiple convex shapes before 
                             using it in the simulation.
-        mass_kg:            Mass of this physical object type in kg (default 
-                            1kg).
-        lateral friction:   Friction of this object sliding over another object.
-        spinning friction:  Friction of this object spinning on another object
+        mass_kg:            Mass of this physical object type in kg (default 1kg).
+        lateral_friction:   Friction of this object sliding over another object.
+        spinning_friction:  Friction of this object spinning on another object
                             (e.g. a top spinning on a table).
-        rolling friction:   Friction of an object rolling over another object 
+        rolling_friction:   Friction of an object rolling over another object 
                             (e.g. a wheel rolling over the ground).
                             For details on how to set these values, please refer
                             to the documentation of the bullet physics engine.
