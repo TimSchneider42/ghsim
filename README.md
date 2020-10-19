@@ -52,3 +52,9 @@ Outputs a simulation result object for each time step of the simulation.
 - **UnpackPhysicalObject**: Unpacks a physical object into its convex geometries and its transformation.
 
 For an usage example, please refer to `example.gh`.
+
+### Simulation Advice
+
+Ensure that any objects in the scene are not too close together at the beginning of the simulation.
+Otherwise they might start to overlap which makes the simulation unstable.
+Instead, always leave 1-2mm distance between objects and rather let them settle during the simulation. 
