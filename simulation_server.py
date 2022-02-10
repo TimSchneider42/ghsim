@@ -119,8 +119,8 @@ def simulate(physical_objects: List[Dict], sim_length_s: float = 10.0, time_step
         trans = po["transformation"]
         h = po["mesh_hash"]
         mass = po["mass_kg"] if "mass_kg" in po else 1
-        trans = np.array(trans) * 0.001
-        pos = trans[:3, 3]
+        trans = np.array(trans)
+        pos = trans[:3, 3] * 0.001
         rotation = Rotation.from_matrix(trans[:3, :3])
         bodies[i] = p.createMultiBody(baseMass=mass, baseCollisionShapeIndex=mesh_store[h], basePosition=pos,
                                       baseOrientation=rotation.as_quat())
