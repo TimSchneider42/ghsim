@@ -51,7 +51,7 @@ Outputs a simulation result object for each time step of the simulation.
 - **SimulationStateAt**: Extracts the transformation of each physical object at a specific time from the simulator output.
 - **UnpackPhysicalObject**: Unpacks a physical object into its convex geometries and its transformation.
 
-For an usage example, please refer to `example.gh`.
+For an usage example, please refer to `boxes.gh` and `wasp.gh`.
 
 ### Simulation Advice
 
